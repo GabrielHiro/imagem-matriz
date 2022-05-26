@@ -15,8 +15,8 @@ public class imagem_matriz {
 	        int l,c; 							// i = linhas e c = colunas
 	        
 	        //Laços de movimentação dentro da matrix
-	        for(c=0;c<2;c++){
-	            for(l=0;l<2;l++){
+	        for(c=0;c<16;c++){
+	            for(l=0;l<16;l++){
 	          
 	            System.out.printf("\n ID's das cores\n 0 - Branco \n 1 - Preto \n 2 - Vermelho \n 3 - Bege \n Digite a cor da linha [%d],[%d]:  ",c,l);
 	            display[c][l] = ler.nextInt();//scanner da matrix do display
@@ -30,9 +30,9 @@ public class imagem_matriz {
 	        }
 	        
 	        //Display
-	        for(c=0;c<2;c++){
+	        for(c=0;c<16;c++){
 	            System.out.printf("\n");
-	            for(l=0;l<2;l++){
+	            for(l=0;l<16;l++){
 	                System.out.printf(" %d",display[c][l]);      
 	            }
 	        }
